@@ -1,0 +1,125 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+body {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+.tui-image-editor-header-logo,
+#filerobot-image-editor-root .fNVQwS {
+  display: none !important;
+}
+input[type="range"]::-ms-track {
+  cursor: pointer;
+}
+#filerobot-image-editor-root .kltJym {
+  display: none;
+}
+.imageeditorwrapper {
+  height: 100vh;
+}
+.terms > p > a {
+  color: blue;
+  text-decoration: none;
+}
+.imageuploader-inner > div {
+  max-width: 49%;
+  width: 100%;
+}
+.imageuploadercomponent {
+  padding-top: 100px;
+}
+.filerobot-image-editor-root,
+.imageuploadercomponent {
+  max-width: 1160px;
+  margin: 0px auto;
+  width: 100%;
+}
+.imageuploader-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dragarea {
+  border: 3px dashed #4e7efe;
+  border-radius: 3px;
+  padding: 45px 30px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.dragarea > button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 57px;
+  line-height: 57px;
+  display: inline-block;
+  color: #fff;
+  padding: 0 35px;
+  background: #4e7efe;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  border: none;
+}
+.imageuploader-inner > div.imageuploader-right > h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 36px;
+}
+.terms > p {
+  text-align: left;
+  font-size: 11px;
+}
+.no-image {
+  margin-top: 20px;
+}
+.no-image .no-imageleft {
+  padding-top: 8px;
+  font-weight: 700;
+  margin-right: 30px;
+  font-size: 14px;
+}
+.no-imageright > img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  margin-left: -15px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.no-image-inner {
+  display: flex;
+  align-items: center;
+}
+.imageuploader-inner > div.imageuploader-left img {
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .imageuploadercomponent {
+    padding: 100px 25px;
+  }
+  .imageuploader-inner > div.imageuploader-right > h2 {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .imageuploader-inner {
+    flex-direction: column;
+  }
+  .imageuploader-inner > div {
+    max-width: 100%;
+  }
+  .imageuploadercomponent {
+    padding: 30px 25px;
+  }
+  .imageuploader-inner > div.imageuploader-right > h2 {
+    font-size: 24px;
+  }
+}
