@@ -22,7 +22,7 @@ const RobotImageEditor = ({ imageObj, resetImage }) => {
     showInModal: false,
     colorScheme: "light",
     // Default ['adjust', 'effects', 'filters', 'rotate', 'crop', 'resize', 'watermark', 'shapes', 'image', 'text']
-    tools: ["adjust", "rotate", "filters", "effects"],
+    tools: ["adjust", "rotate"],
     reduceBeforeEdit: {
       mode: "auto",
       widthLimit: 2000,
