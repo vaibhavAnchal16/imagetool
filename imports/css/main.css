@@ -11,7 +11,13 @@ body {
 input[type="range"]::-ms-track {
   cursor: pointer;
 }
-#filerobot-image-editor-root .kltJym {
+#filerobot-image-editor-root .fUJubz,
+#filerobot-image-editor-root .hIfToq {
+  height: auto !important;
+}
+
+#filerobot-image-editor-root .kltJym,
+#filerobot-image-editor-root .hidefilters .customfilter {
   display: none;
 }
 .imageeditorwrapper {

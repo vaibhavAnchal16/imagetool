@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
-import FilerobotImageEditor from "filerobot-image-editor";
+import FilerobotImageEditor from "filerobot-image-editor-tool";
 import EditorTheme from "./constants/EditorTheme";
+import $ from "jquery";
 
 const RobotImageEditor = ({ imageObj, resetImage }) => {
   const [showEditor, setShowEditor] = useState(false);
+  const [sharpValue, setSharpValue] = useState(0);
   const [imgSrc, setSrc] = useState("");
+
+  var [originalSrcbuff, setOSB] = useState(null);
   useEffect(() => {
     if (imageObj?.length > 0) {
       setShowEditor(true);
@@ -18,7 +22,7 @@ const RobotImageEditor = ({ imageObj, resetImage }) => {
     showInModal: false,
     colorScheme: "light",
     // Default ['adjust', 'effects', 'filters', 'rotate', 'crop', 'resize', 'watermark', 'shapes', 'image', 'text']
-    tools: ["adjust", "rotate"],
+    tools: ["adjust", "rotate", "filters", "effects"],
     reduceBeforeEdit: {
       mode: "auto",
       widthLimit: 2000,
@@ -26,6 +30,8 @@ const RobotImageEditor = ({ imageObj, resetImage }) => {
     },
     // replaceCloseWithBackButton: true,
   };
+
+  useEffect(() => {}, []);
 
   return (
     <div>
@@ -36,6 +42,7 @@ const RobotImageEditor = ({ imageObj, resetImage }) => {
         onClose={(_) => {
           resetImage();
         }}
+        onOpen={(_) => {}}
       />
     </div>
   );
