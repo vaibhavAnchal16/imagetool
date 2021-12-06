@@ -11,35 +11,43 @@ body {
 input[type="range"]::-ms-track {
   cursor: pointer;
 }
-.imageeditorwrapper #filerobot-image-editor-root .eDYUor div {
+.imageeditorwrapper #filerobot-image-editor-root .image-editor-range {
   margin-left: 0px;
   padding: 20px 0px;
 }
-.imageeditorwrapper #filerobot-image-editor-root .fUJubz,
-.imageeditorwrapper #filerobot-image-editor-root .hIfToq {
+#filerobot-image-editor-root .eDYUor .rangervalue {
+  width: 100%;
+  text-align: right;
+  padding-top: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5d6d7e;
+  margin-left: auto;
+}
+.imageeditorwrapper #filerobot-image-editor-root .spztoolbarwrapper,
+.imageeditorwrapper #filerobot-image-editor-root .spzmaintoolsbar {
   height: auto;
 }
-.imageeditorwrapper #filerobot-image-editor-root .hqkLkE #range {
+.imageeditorwrapper #filerobot-image-editor-root .image-editor-range #range {
   height: 4px;
   background: #e7ecef;
 }
 .imageeditorwrapper
   #filerobot-image-editor-root
-  .hqkLkE
+  .image-editor-range
   #range::-webkit-slider-thumb {
   width: 12px;
   height: 12px;
   background: #6779eb;
   cursor: pointer;
 }
-#filerobot-image-editor-root .kltJym,
-#filerobot-image-editor-root .hidefilters .customfilter {
+#filerobot-image-editor-root .spzheadertitle {
   display: none;
 }
-.imageeditorwrapper #filerobot-image-editor-root .iWXKJf > div {
+.imageeditorwrapper #filerobot-image-editor-root .spzeditorfooterwrapper > div {
   font-size: 16px;
 }
-.imageeditorwrapper #filerobot-image-editor-root .iWXKJf {
+.imageeditorwrapper #filerobot-image-editor-root .spzeditorfooterwrapper {
   height: auto;
   padding: 8px 0px;
   margin-bottom: 10px;
@@ -140,10 +148,10 @@ input[type="range"]::-ms-track {
 }
 
 @media (max-width: 767px) {
-  .imageeditorwrapper #filerobot-image-editor-root .dZhbOq {
+  .imageeditorwrapper #filerobot-image-editor-root .spzmaincanvaseditorwrapper {
     flex-direction: column-reverse;
   }
-  #filerobot-image-editor-root .ldrUBI {
+  #filerobot-image-editor-root .spzheaderwrapper {
     position: fixed;
     left: 0;
     right: 0;
@@ -151,39 +159,39 @@ input[type="range"]::-ms-track {
     bottom: 0;
     box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
   }
-  .imageeditorwrapper #filerobot-image-editor-root .eDYUor div {
+  .imageeditorwrapper #filerobot-image-editor-root .image-editor-range {
     margin: 0px 0px;
     padding: 10px 10px;
   }
-  #filerobot-image-editor-root .hqkLkE label {
+  #filerobot-image-editor-root .image-editor-range label {
     padding-top: 10px;
   }
-  #filerobot-image-editor-root .fUJubz {
+  #filerobot-image-editor-root .spztoolbarwrapper {
     padding-top: 10px;
   }
-  .imageeditorwrapper #filerobot-image-editor-root .hqkLkE #range {
+  .imageeditorwrapper #filerobot-image-editor-root .image-editor-range #range {
     height: 2px;
   }
-  .imageeditorwrapper #filerobot-image-editor-root .ioUsHI {
+  .imageeditorwrapper #filerobot-image-editor-root .spzmaintoolsbar > div {
     min-height: auto;
     padding: 10px 10px;
     min-width: 80px;
     white-space: nowrap;
   }
-  #filerobot-image-editor-root .ibhLNh {
+  #filerobot-image-editor-root .spzmaincanvaseditorinner {
     display: flex;
     align-items: center;
   }
-  #filerobot-image-editor-root .ioUsHI > div:first-child {
+  /* #filerobot-image-editor-root .spzmaintoolsbar > div > div:first-child {
     font-size: 25px;
     height: auto;
-  }
-  #filerobot-image-editor-root .iWXKJf {
+  } */
+  #filerobot-image-editor-root .spzeditorfooterwrapper {
     box-shadow: 0 0px 0px rgb(0 0 0 / 16%), 0 0px 4px rgb(0 0 0 / 18%);
   }
   .imageeditorwrapper
     #filerobot-image-editor-root
-    .hqkLkE
+    .image-editor-range
     #range::-webkit-slider-thumb {
     height: 10px;
     width: 10px;
@@ -201,11 +209,14 @@ input[type="range"]::-ms-track {
     font-size: 24px;
     list-style: none;
   }
-  .imageeditorwrapper #filerobot-image-editor-root .iWXKJf {
+  .imageeditorwrapper #filerobot-image-editor-root .spzeditorfooterwrapper {
     padding: 2px 0px;
     margin-bottom: 0px;
   }
-  .imageeditorwrapper #filerobot-image-editor-root .iWXKJf > div {
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .spzeditorfooterwrapper
+    > div {
     font-size: 14px;
   }
 }

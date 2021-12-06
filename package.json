@@ -12,7 +12,7 @@
     "@toast-ui/react-image-editor": "^3.15.2",
     "browser-process-hrtime": "^1.0.0",
     "file-saver": "^2.0.5",
-    "filerobot-image-editor-tool": "^1.0.3",
+    "filerobot-image-editor-tool": "^1.0.5",
     "https": "^1.0.0",
     "jquery": "^3.6.0",
     "meteor-node-stubs": "^1.1.0",
