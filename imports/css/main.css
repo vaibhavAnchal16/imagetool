@@ -5,20 +5,28 @@ body {
 }
 
 .tui-image-editor-header-logo,
-#filerobot-image-editor-root .fNVQwS {
+.imageeditorwrapper #filerobot-image-editor-root .fNVQwS {
   display: none !important;
 }
 input[type="range"]::-ms-track {
   cursor: pointer;
 }
-#filerobot-image-editor-root .fUJubz,
-#filerobot-image-editor-root .hIfToq {
-  height: auto !important;
+.imageeditorwrapper #filerobot-image-editor-root .fUJubz,
+.imageeditorwrapper #filerobot-image-editor-root .hIfToq {
+  height: auto;
 }
 
 #filerobot-image-editor-root .kltJym,
 #filerobot-image-editor-root .hidefilters .customfilter {
   display: none;
+}
+.imageeditorwrapper #filerobot-image-editor-root .iWXKJf > div {
+  font-size: 16px;
+}
+.imageeditorwrapper #filerobot-image-editor-root .iWXKJf {
+  height: auto;
+  padding: 8px 0px;
+  margin-bottom: 10px;
 }
 .imageeditorwrapper {
   height: 100vh;
@@ -116,6 +124,54 @@ input[type="range"]::-ms-track {
 }
 
 @media (max-width: 767px) {
+  .imageeditorwrapper #filerobot-image-editor-root .dZhbOq {
+    flex-direction: column-reverse;
+  }
+  #filerobot-image-editor-root .ldrUBI {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    bottom: 0;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+  .imageeditorwrapper #filerobot-image-editor-root .eDYUor div {
+    margin: 0px 0px;
+    padding: 10px 10px;
+  }
+  #filerobot-image-editor-root .hqkLkE label {
+    padding-top: 10px;
+  }
+  #filerobot-image-editor-root .fUJubz {
+    padding-top: 10px;
+  }
+  .imageeditorwrapper #filerobot-image-editor-root .hqkLkE #range {
+    height: 2px;
+  }
+  .imageeditorwrapper #filerobot-image-editor-root .ioUsHI {
+    min-height: auto;
+    padding: 10px 10px;
+    min-width: 80px;
+    white-space: nowrap;
+  }
+  #filerobot-image-editor-root .ibhLNh {
+    display: flex;
+    align-items: center;
+  }
+  #filerobot-image-editor-root .ioUsHI > div:first-child {
+    font-size: 25px;
+    height: auto;
+  }
+  #filerobot-image-editor-root .iWXKJf {
+    box-shadow: 0 0px 0px rgb(0 0 0 / 16%), 0 0px 4px rgb(0 0 0 / 18%);
+  }
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .hqkLkE
+    #range::-webkit-slider-thumb {
+    height: 10px;
+    width: 10px;
+  }
   .imageuploader-inner {
     flex-direction: column;
   }
@@ -128,5 +184,12 @@ input[type="range"]::-ms-track {
   .imageuploader-inner > div.imageuploader-right > h2 {
     font-size: 24px;
     list-style: none;
+  }
+  .imageeditorwrapper #filerobot-image-editor-root .iWXKJf {
+    padding: 2px 0px;
+    margin-bottom: 0px;
+  }
+  .imageeditorwrapper #filerobot-image-editor-root .iWXKJf > div {
+    font-size: 14px;
   }
 }
