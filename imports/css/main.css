@@ -42,7 +42,7 @@ input[type="range"]::-ms-track {
   cursor: pointer;
 }
 #filerobot-image-editor-root .spzheadertitle {
-  display: none;
+  /* display: none; */
 }
 .imageeditorwrapper #filerobot-image-editor-root .spzeditorfooterwrapper > div {
   font-size: 16px;
@@ -148,6 +148,16 @@ input[type="range"]::-ms-track {
 }
 
 @media (max-width: 767px) {
+  .imageeditorwrapper #filerobot-image-editor-root .spzmaintoolsbar {
+    padding: 0px 0px;
+  }
+  .spztoolssingle {
+    overflow: auto;
+    background: #fff;
+  }
+  #filerobot-image-editor-root .eDYUor div {
+    margin-left: 0px;
+  }
   .imageeditorwrapper #filerobot-image-editor-root .spzmaincanvaseditorwrapper {
     flex-direction: column-reverse;
   }
@@ -162,6 +172,7 @@ input[type="range"]::-ms-track {
   .imageeditorwrapper #filerobot-image-editor-root .image-editor-range {
     margin: 0px 0px;
     padding: 10px 10px;
+    width: 190px !important;
   }
   #filerobot-image-editor-root .image-editor-range label {
     padding-top: 10px;
@@ -172,15 +183,27 @@ input[type="range"]::-ms-track {
   .imageeditorwrapper #filerobot-image-editor-root .image-editor-range #range {
     height: 2px;
   }
-  .imageeditorwrapper #filerobot-image-editor-root .spzmaintoolsbar > div {
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .spzmaintoolsbar
+    > div:not(.spztoolssingle) {
     min-height: auto;
-    padding: 10px 10px;
+    padding: 5px 10px;
     min-width: 80px;
     white-space: nowrap;
   }
-  #filerobot-image-editor-root .spzmaincanvaseditorinner {
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .spzmaintoolsbar
+    > div.spztoolssingle
+    > div:first-child {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+  }
+  #filerobot-image-editor-root .spzmaincanvaseditorinner {
+    /* display: flex;
+    align-items: center; */
   }
   /* #filerobot-image-editor-root .spzmaintoolsbar > div > div:first-child {
     font-size: 25px;
