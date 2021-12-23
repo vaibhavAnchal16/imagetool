@@ -31,7 +31,19 @@ const RobotImageEditor = ({ imageObj, resetImage }) => {
     // replaceCloseWithBackButton: true,
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    $("body").on(
+      "click",
+      "#filerobot-image-editor-root .image-editor-range label",
+      function (e) {
+        $(e.currentTarget).parent().toggleClass("active-filter");
+        $(e.currentTarget)
+          .parent()
+          .parent()
+          .toggleClass("active-parent-filter");
+      }
+    );
+  }, []);
 
   return (
     <div>
@@ -41,6 +53,9 @@ const RobotImageEditor = ({ imageObj, resetImage }) => {
         config={config}
         onClose={(_) => {
           resetImage();
+          // if($(".spztoolssingle+div").hasClass("active-parent-filter")){
+
+          // }
         }}
         onOpen={(_) => {}}
       />

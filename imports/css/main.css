@@ -148,8 +148,33 @@ input[type="range"]::-ms-track {
 }
 
 @media (max-width: 767px) {
+  #filerobot-image-editor-root .rangervalue,
+  .imageeditorwrapper #filerobot-image-editor-root .image-editor-range #range {
+    display: none;
+  }
+  #filerobot-image-editor-root .active-filter .rangervalue,
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .image-editor-range.active-filter
+    #range {
+    display: block;
+  }
+
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .spzmaintoolsbar
+    > div:not(.spztoolssingle)
+    > div:first-child {
+    font-size: 26px;
+    height: 26px;
+  }
   .imageeditorwrapper #filerobot-image-editor-root .spzmaintoolsbar {
     padding: 0px 0px;
+  }
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .spzmaintoolsbar
+    > div:not(.spztoolssingle) {
   }
   .spztoolssingle {
     overflow: auto;
@@ -171,14 +196,14 @@ input[type="range"]::-ms-track {
   }
   .imageeditorwrapper #filerobot-image-editor-root .image-editor-range {
     margin: 0px 0px;
-    padding: 10px 10px;
-    width: 190px !important;
+    padding: 10px 10px 10px;
+    /* width: 190px !important; */
   }
   #filerobot-image-editor-root .image-editor-range label {
-    padding-top: 10px;
+    padding-top: 5px !important;
   }
   #filerobot-image-editor-root .spztoolbarwrapper {
-    padding-top: 10px;
+    /* padding-top: 10px; */
   }
   .imageeditorwrapper #filerobot-image-editor-root .image-editor-range #range {
     height: 2px;
@@ -200,6 +225,15 @@ input[type="range"]::-ms-track {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    width: 100%;
+  }
+  .imageeditorwrapper
+    #filerobot-image-editor-root
+    .spzmaintoolsbar
+    > div.spztoolssingle
+    > div.active-parent-filter
+    > div:not(.active-filter) {
+    display: none;
   }
   #filerobot-image-editor-root .spzmaincanvaseditorinner {
     /* display: flex;
@@ -216,8 +250,8 @@ input[type="range"]::-ms-track {
     #filerobot-image-editor-root
     .image-editor-range
     #range::-webkit-slider-thumb {
-    height: 10px;
-    width: 10px;
+    height: 7px;
+    width: 7px;
   }
   .imageuploader-inner {
     flex-direction: column;
